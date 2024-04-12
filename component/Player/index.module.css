@@ -15,11 +15,11 @@
 }
 
 .icon {
-  @apply text-white absolute right-2 bottom-2;
+  @apply text-foreground absolute right-2 bottom-2;
 }
 
 .user {
-  @apply text-white;
+  @apply text-foreground;
 }
 
 .notPlaying {
