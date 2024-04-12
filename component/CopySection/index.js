@@ -8,12 +8,12 @@ const CopySection = (props) => {
 
   return (
     <div className={styles.copyContainer}>
-      <div className={styles.copyHeading}>Copy Room ID:</div>
+      <div className={styles.copyHeading}>Room ID</div>
       <hr />
-      <div className={styles.copyDescription}>
-        <span>{roomId}</span>
+      <div className={"flex gap-4 flex-row flex-wrap items-center justify-center w-full"}>
+        <span className="">{roomId}</span>
         <CopyToClipboard text={roomId}>
-          <Copy className="ml-3 cursor-pointer" />
+          <Copy className="ml-3 cursor-pointer hover:cursor-pointer z-10" />
         </CopyToClipboard>
       </div>
     </div>

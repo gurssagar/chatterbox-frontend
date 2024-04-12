@@ -2,12 +2,13 @@ import cx from "classnames";
 import { Mic, Video, PhoneOff, MicOff, VideoOff } from "lucide-react";
 
 import styles from "@/component/Bottom/index.module.css";
+import { cn } from "@/lib/utils";
 
 const Bottom = (props) => {
   const { muted, playing, toggleAudio, toggleVideo, leaveRoom } = props;
 
   return (
-    <div className={styles.bottomMenu}>
+    <div className={cn(styles.bottomMenu)}>
       {muted ? (
         <MicOff
           className={cx(styles.icon, styles.active)}

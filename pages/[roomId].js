@@ -138,7 +138,7 @@ const Room = () => {
 
   return (
     <>
-      <div className="bg-background text-foreground">
+      <div className="bg-background text-foreground flex justify-center items-center max-w-screen max-h-screen rounded-3xl">
         {playerHighlighted && (
           <Player
             url={playerHighlighted.url}
