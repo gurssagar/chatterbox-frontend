@@ -30,8 +30,9 @@ export default function Home() {
         src={"/logos/svgexport-27.svg"}
         width={1000}
         height={1000}
-        className="sm:w-96 w-full h-auto"
+        className="sm:w-96 select-none w-full h-auto"
         alt="Chatterbox Logo"
+        draggable={false}
       ></Image>
       <Input
         className="sm:w-96 w-full"
