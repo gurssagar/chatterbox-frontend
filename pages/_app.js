@@ -13,7 +13,7 @@ const monserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return (
     <main className={cn(monserrat.className, "light bg-[url('https://cdn.discordapp.com/attachments/1227579080442904662/1228210856836464750/Education_Sketchnotes_Presentation_Template.png?ex=662b377f&is=6618c27f&hm=73440e748cc3dd1a6fa05d1a5049568d11b8052e823357d957790dfffb1c0a3a&')] bg-no-repeat bg-cover bg-center")}>
-      <ThemeProvider enableSystem={true} themes={["light", "dark"]} defaultTheme="dark" attribute="class">
+      <ThemeProvider enableSystem={false} themes={["light", "dark"]} defaultTheme="light" attribute="class">
         <SocketProvider>
           <Component {...pageProps} />
         </SocketProvider>
